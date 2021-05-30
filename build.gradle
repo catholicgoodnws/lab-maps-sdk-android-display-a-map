@@ -17,8 +17,11 @@ buildscript {
 allprojects {
     repositories {
         google()
-        jcenter()
-        // Replace this line with the TomTom Maven repository
+        jcenter()     
+		maven { // Replace this line with the TomTom Maven repository
+         url "https://maven.tomtom.com:8443/nexus/content/repositories/releases/"
+        }
+
 
     }
 }
