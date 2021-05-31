@@ -9,6 +9,8 @@ android {
         versionCode 1
         versionName "0.0.1-SNAPSHOT"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        // Add here the manifestPlaceholders with a Gradle property
+        manifestPlaceholders = online.maps.key        
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -31,6 +33,7 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'com.google.android.material:material:1.0.0'
+    implementation("com.tomtom.online:sdk-maps:2.4165") 
 
     implementation 'com.tomtom.online:sdk-maps:2.4165'
     implementation 'com.tomtom.online:sdk-maps-ui-extensions:2.4165'
